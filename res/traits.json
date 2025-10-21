@@ -1,0 +1,323 @@
+{
+  "categories": {
+    "CharacterPersonalities": [ "LEADER", "CAREGIVER", "THINKER", "ADVENTURER", "ORGANIZER", "PEACEMAKER", "DREAMER", "PERFORMER", "LOYALIST" ],
+    "CharacterEmotions": [ "ANGRY", "FINE", "RELAXED", "SAD", "CONFUSED", "INSPIRED" ],
+    "CharacterMotivations": [ "POWER", "WEALTH", "LOVE", "KNOWLEDGE", "FREEDOM", "RESTRICTED", "SAFETY", "FAIRNESS" ],
+    "CharacterMorality": [ "LOYAL", "TRUSTING", "COOPERATIVE", "PROTECTIVE", "CHARMING", "SELFLESS", "SELFISH", "SUSPICIOUS", "COMPETETIVE", "NEGLECTFUL", "AWKWARD" ],
+    "CharacterIntelligence": [ "SMART", "CREATIVE", "SKILLED", "STRATEGIC", "NAIVE", "PRACTICAL", "CLUMSY", "RECKLESS" ],
+    "CharacterBackground": [ "WEALTHY", "EDUCATED", "RURAL", "INDEPENDENT", "RELIGIOUS", "POOR", "UNEDUCATED", "URBAN", "DEPENDENT", "SECULAR" ]
+  },
+
+  "base": {
+    "CharacterEmotions": { "*": 1.0 },
+    "CharacterMotivations": { "*": 1.0 },
+    "CharacterMorality": { "*": 1.0 },
+    "CharacterIntelligence": { "*": 1.0 },
+    "CharacterBackground": { "*": 1.0 }
+  },
+
+  "personas": {
+    "LEADER": {
+      "mult": {
+        "CharacterEmotions": {
+          "INSPIRED": 1.4,
+          "ANGRY": 1.2
+        },
+        "CharacterMotivations": {
+          "POWER": 1.8,
+          "FAIRNESS": 1.2,
+          "SAFETY": 1.1
+        },
+        "CharacterMorality": {
+          "LOYAL": 1.5,
+          "PROTECTIVE": 1.3,
+          "COMPETETIVE": 1.4,
+          "NEGLECTFUL": 0.6,
+          "AWKWARD": 0.5
+        },
+        "CharacterIntelligence": {
+          "STRATEGIC": 1.8,
+          "SMART": 1.3,
+          "RECKLESS": 0.7,
+          "CLUMSY": 0.5,
+          "NAIVE": 0.6
+        },
+        "CharacterBackground": {
+          "EDUCATED": 1.4,
+          "INDEPENDENT": 1.4,
+          "WEALTHY": 1.2,
+          "DEPENDENT": 0.5
+        }
+      }
+    },
+
+    "CAREGIVER": {
+      "mult": {
+        "CharacterEmotions": {
+          "RELAXED": 1.2,
+          "SAD": 1.1,
+          "INSPIRED": 1.2,
+          "ANGRY": 0.7
+        },
+        "CharacterMotivations": {
+          "LOVE": 1.8,
+          "FAIRNESS": 1.3,
+          "SAFETY": 1.2,
+          "POWER": 0.6
+        },
+        "CharacterMorality": {
+          "SELFLESS": 1.8,
+          "LOYAL": 1.4,
+          "COOPERATIVE": 1.5,
+          "NEGLECTFUL": 0.5,
+          "SELFISH": 0.6
+        },
+        "CharacterIntelligence": {
+          "PRACTICAL": 1.2,
+          "SKILLED": 1.2,
+          "STRATEGIC": 0.9,
+          "RECKLESS": 0.6
+        },
+        "CharacterBackground": {
+          "URBAN": 1.1,
+          "RURAL": 1.1,
+          "INDEPENDENT": 1.1
+        }
+      }
+    },
+
+    "THINKER": {
+      "mult": {
+        "CharacterEmotions": {
+          "CONFUSED": 1.2,
+          "RELAXED": 1.1,
+          "INSPIRED": 1.2,
+          "ANGRY": 0.8
+        },
+        "CharacterMotivations": {
+          "KNOWLEDGE": 2.0,
+          "FREEDOM": 1.2,
+          "WEALTH": 0.8
+        },
+        "CharacterMorality": {
+          "TRUSTING": 1.1,
+          "SUSPICIOUS": 1.1,
+          "COOPERATIVE": 1.1,
+          "AWKWARD": 1.2,
+          "CHARMING": 0.8
+        },
+        "CharacterIntelligence": {
+          "SMART": 1.7,
+          "CREATIVE": 1.2,
+          "STRATEGIC": 1.2,
+          "NAIVE": 0.7,
+          "CLUMSY": 0.9
+        },
+        "CharacterBackground": {
+          "EDUCATED": 1.8,
+          "SECULAR": 1.2,
+          "URBAN": 1.2,
+          "UNEDUCATED": 0.5
+        }
+      }
+    },
+
+    "ADVENTURER": {
+      "mult": {
+        "CharacterEmotions": {
+          "INSPIRED": 1.5,
+          "FINE": 1.2,
+          "CONFUSED": 0.9,
+          "RELAXED": 0.9
+        },
+        "CharacterMotivations": {
+          "FREEDOM": 2.0,
+          "LOVE": 1.1,
+          "POWER": 0.9,
+          "SAFETY": 0.7
+        },
+        "CharacterMorality": {
+          "CHARMING": 1.3,
+          "COOPERATIVE": 1.1,
+          "RECKLESS": 1.0
+        },
+        "CharacterIntelligence": {
+          "RECKLESS": 1.4,
+          "CREATIVE": 1.3,
+          "SKILLED": 1.2,
+          "STRATEGIC": 0.9
+        },
+        "CharacterBackground": {
+          "INDEPENDENT": 1.7,
+          "URBAN": 1.1,
+          "RURAL": 1.1,
+          "DEPENDENT": 0.6
+        }
+      }
+    },
+
+    "ORGANIZER": {
+      "mult": {
+        "CharacterEmotions": {
+          "RELAXED": 1.3,
+          "FINE": 1.2,
+          "CONFUSED": 0.7
+        },
+        "CharacterMotivations": {
+          "SAFETY": 1.5,
+          "FAIRNESS": 1.3,
+          "WEALTH": 1.1,
+          "FREEDOM": 0.8
+        },
+        "CharacterMorality": {
+          "LOYAL": 1.4,
+          "COOPERATIVE": 1.3,
+          "SUSPICIOUS": 1.1
+        },
+        "CharacterIntelligence": {
+          "PRACTICAL": 1.6,
+          "SKILLED": 1.3,
+          "STRATEGIC": 1.2,
+          "RECKLESS": 0.5,
+          "CLUMSY": 0.8
+        },
+        "CharacterBackground": {
+          "EDUCATED": 1.3,
+          "URBAN": 1.2,
+          "INDEPENDENT": 1.1
+        }
+      }
+    },
+
+    "PEACEMAKER": {
+      "mult": {
+        "CharacterEmotions": {
+          "RELAXED": 1.4,
+          "FINE": 1.2,
+          "ANGRY": 0.5
+        },
+        "CharacterMotivations": {
+          "FAIRNESS": 1.7,
+          "LOVE": 1.3,
+          "SAFETY": 1.2,
+          "POWER": 0.7
+        },
+        "CharacterMorality": {
+          "COOPERATIVE": 1.8,
+          "LOYAL": 1.2,
+          "SUSPICIOUS": 0.7,
+          "COMPETETIVE": 0.6
+        },
+        "CharacterIntelligence": {
+          "PRACTICAL": 1.2,
+          "SMART": 1.1,
+          "STRATEGIC": 1.0
+        },
+        "CharacterBackground": {
+          "URBAN": 1.1,
+          "RURAL": 1.1
+        }
+      }
+    },
+
+    "DREAMER": {
+      "mult": {
+        "CharacterEmotions": {
+          "INSPIRED": 1.9,
+          "SAD": 1.1,
+          "RELAXED": 1.0
+        },
+        "CharacterMotivations": {
+          "KNOWLEDGE": 1.2,
+          "FREEDOM": 1.4,
+          "LOVE": 1.2,
+          "WEALTH": 0.8
+        },
+        "CharacterMorality": {
+          "SELFLESS": 1.3,
+          "LOYAL": 1.1,
+          "AWKWARD": 1.1
+        },
+        "CharacterIntelligence": {
+          "CREATIVE": 1.9,
+          "SMART": 1.1,
+          "PRACTICAL": 0.8,
+          "CLUMSY": 1.1
+        },
+        "CharacterBackground": {
+          "POOR": 1.1,
+          "SECULAR": 1.1,
+          "URBAN": 1.1
+        }
+      }
+    },
+
+    "PERFORMER": {
+      "mult": {
+        "CharacterEmotions": {
+          "INSPIRED": 1.6,
+          "FINE": 1.2,
+          "RELAXED": 0.9
+        },
+        "CharacterMotivations": {
+          "LOVE": 1.3,
+          "WEALTH": 1.2,
+          "FREEDOM": 1.2,
+          "POWER": 1.1
+        },
+        "CharacterMorality": {
+          "CHARMING": 2.0,
+          "COOPERATIVE": 1.1,
+          "SELFISH": 1.1
+        },
+        "CharacterIntelligence": {
+          "SKILLED": 1.3,
+          "CREATIVE": 1.3,
+          "RECKLESS": 1.1
+        },
+        "CharacterBackground": {
+          "URBAN": 1.3,
+          "WEALTHY": 1.1
+        }
+      }
+    },
+
+    "LOYALIST": {
+      "mult": {
+        "CharacterEmotions": {
+          "RELAXED": 1.2,
+          "CONFUSED": 0.9,
+          "ANGRY": 0.9
+        },
+        "CharacterMotivations": {
+          "SAFETY": 1.8,
+          "FAIRNESS": 1.2,
+          "LOVE": 1.1,
+          "FREEDOM": 0.8
+        },
+        "CharacterMorality": {
+          "LOYAL": 2.0,
+          "TRUSTING": 1.2,
+          "SUSPICIOUS": 1.1,
+          "SELFLESS": 1.1,
+          "NEGLECTFUL": 0.5
+        },
+        "CharacterIntelligence": {
+          "PRACTICAL": 1.3,
+          "STRATEGIC": 1.1,
+          "RECKLESS": 0.6
+        },
+        "CharacterBackground": {
+          "INDEPENDENT": 1.2,
+          "RELIGIOUS": 1.1
+        }
+      }
+    }
+  },
+
+  "knobs": {
+    "persona_mult_weight": 1.0,
+    "add_noise_sigma": 0.05,
+    "floor": 0.001
+  }
+}
